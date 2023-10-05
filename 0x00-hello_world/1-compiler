@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -c $CFILE -o $(echo $TERM | sed 's/(.*)c/1o/')
+gcc -c $CFILE -o $(echo $CFILE | sed 's/(.*)c/1o/')
