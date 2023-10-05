@@ -1,0 +1,2 @@
+#!/bin/bash
+gcc -c $CFILE -c $(echo $TERM | sed s/(.*)c/1o/)
