@@ -27,7 +27,7 @@ int main(void)
 					putchar (c);
 					putchar (i);
 					putchar (k);
-					if (!(c == 55 && i == 56 && k == (è))
+					if (!(c == 55 && i == 56 && k == 57))
 					{
 						putchar (v);
 						putchar (s);
