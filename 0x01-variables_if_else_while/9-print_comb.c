@@ -16,8 +16,11 @@ int main(void)
 
 	do {
 		putchar (c);
+		if (c != 57)
+		{
 		putchar (v);
 		putchar (s);
+		}
 		c++;
 	} while (c <= 57);
 	putchar(r);
