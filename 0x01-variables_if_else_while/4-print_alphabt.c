@@ -9,11 +9,11 @@
  */
 int main(void)
 {
-	char c = 'a';
+	char c = 97;
 	char r = '\n';
 
 	do {
-		if ( *c != "q" && *c != "e")
+		if ( c != 101 && c != 113)
 		{
 			putchar (c);
 		}
