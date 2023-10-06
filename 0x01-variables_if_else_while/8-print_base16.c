@@ -10,7 +10,7 @@
 int main(void)
 {
 	int c = 48;
-	int c = 97;
+	int d = 97;
 	int r = 10;
 
 	do {
