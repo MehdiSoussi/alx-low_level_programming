@@ -27,16 +27,16 @@ int main(void)
 				{
 					if (k > c || (k == c && l > i))
 					{
-						putchar (c);
-						putchar (i);
-						putchar (s);
-						putchar (k);
-						putchar (l);
-						if (!(c == 57 && i == 56 && k == 57 && l == 57))
-						{
-						putchar (v);
-						putchar (s);
-						}
+					putchar (c);
+					putchar (i);
+					putchar (s);
+					putchar (k);
+					putchar (l);
+					if (!(c == 57 && i == 56 && k == 57 && l == 57))
+					{
+					putchar (v);
+					putchar (s);
+					}
 					}
 				}
 			}
