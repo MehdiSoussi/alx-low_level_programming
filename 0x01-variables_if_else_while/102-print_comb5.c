@@ -32,8 +32,11 @@ int main(void)
 						putchar (s);
 						putchar (k);
 						putchar (l);
+						if (!(c == 57 && i == 56 && k == 57 && l ==57))
+						{
 						putchar (v);
 						putchar (s);
+						}
 					}
 				}
 			}
