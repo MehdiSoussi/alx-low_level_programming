@@ -17,11 +17,11 @@ int main(void)
 		putchar (c);
 		c++;
 	} while (c <= 122);
-	c = "A";
+	char d = "A";
 	do {
-		putchar (c);
-		c++;
-	} while (c <= 90);
+		putchar (d);
+		d++;
+	} while (d <= 90);
 	putchar(r);
 
 	return (0);
