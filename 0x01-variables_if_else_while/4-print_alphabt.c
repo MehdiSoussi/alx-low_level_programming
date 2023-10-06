@@ -13,7 +13,7 @@ int main(void)
 	char r = '\n';
 
 	do {
-		if ( c != "q" && c != "e")
+		if ( *c != "q" && *c != "e")
 		{
 			putchar (c);
 		}
