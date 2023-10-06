@@ -23,8 +23,11 @@ int main(void)
 			{
 				putchar (c);
 				putchar (i);
-				putchar (v);
-				putchar (s);
+				if (c != 56 || i != 57)
+				{
+					putchar (v);
+					putchar (s);
+				}
 			}
 			}
 	}
