@@ -15,7 +15,7 @@ int main(void)
 	do {
 		putchar (c);
 		c--;
-	} while (c <= 97);
+	} while (c >= 97);
 	putchar(r);
 
 	return (0);
