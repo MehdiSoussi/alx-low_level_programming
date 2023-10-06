@@ -20,7 +20,7 @@ int main(void)
 	do {
 		putchar (d);
 		d++;
-	} while (d <=102);
+	} while (d <= 102);
 	
 	putchar(r);
 
