@@ -11,13 +11,13 @@ int main(void)
 {
 	char c = 'a';
 	char r = '\n';
-
+	char d = 'A';
 
 	do {
 		putchar (c);
 		c++;
 	} while (c <= 122);
-	char d = "A";
+
 	do {
 		putchar (d);
 		d++;
