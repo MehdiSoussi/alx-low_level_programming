@@ -9,13 +9,14 @@
  */
 int main(void)
 {
-	char c = 97;
+	char c = 'a';
+	char r = '\n';
 
 	do {
 		putchar (c);
 		c++;
 	} while (c <= 122);
-	putchar("\n");
+	putchar(r);
 
 	return (0);
 }
