@@ -21,9 +21,7 @@ int main(void)
 		putchar (d);
 		d++;
 	} while (d <= 102);
-	
 	putchar(r);
-
 	return (0);
 }
 
