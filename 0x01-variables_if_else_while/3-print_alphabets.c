@@ -17,7 +17,7 @@ int main(void)
 		putchar (c);
 		c++;
 	} while (c <= 122);
-	c = "A"
+	c = "A";
 	do {
 		putchar (c);
 		c++;
