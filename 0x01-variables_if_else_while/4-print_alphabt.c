@@ -13,7 +13,7 @@ int main(void)
 	char r = '\n';
 
 	do {
-		if ( c != 101 && c != 113)
+		if (c != 101 && c != 113)
 		{
 			putchar (c);
 		}
