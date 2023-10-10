@@ -8,7 +8,7 @@
  **/
 int main(void)
 {
-	long long n = 0, n1 = 0, n2 = 1;
+	unsigned long int n = 0, n1 = 0, n2 = 1;
 	int i;
 
 	for (i = 0 ; i < 98 ; i++)
@@ -16,7 +16,7 @@ int main(void)
 		n = n1 + n2;
 		n1 = n2;
 		n2 = n;
-		i == 97 ? printf("%lld", n) : printf("%lld, ", n);
+		i == 97 ? printf("%lu", n) : printf("%lu, ", n);
 	}
 	return (0);
 }
