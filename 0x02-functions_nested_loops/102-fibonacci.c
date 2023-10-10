@@ -16,7 +16,7 @@ int main(void)
 		n = n1 + n2;
 		n1 = n2;
 		n2 = n;
-		i == 49 ? printf("%lu", n) : printf("%lu, ", n);
+		i == 49 ? printf("%lu\n", n) : printf("%lu, ", n);
 	}
 	return (0);
 }
