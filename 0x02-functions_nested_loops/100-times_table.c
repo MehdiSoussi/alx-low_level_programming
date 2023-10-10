@@ -42,9 +42,9 @@ if (!(n > 15 || n < 0))
 				}
 				if((i * j) >= 100)
 				{
-					_putchar(c0);
-					_putchar(c1);
-					_putchar(c2);
+					_putchar(c0 + 48);
+					_putchar(c1 + 48);
+					_putchar(c2 + 48);
 				}
 			}
 			else
