@@ -1,13 +1,12 @@
-#include "main.h"
 #include <stdio.h>
 /**
- *  * pmehdi - Entry point
+ *  * main - Entry point
  *   *
  *    * Description: [P214T]
  *     *
  *      * Return: Always 0 (Success)
  *       */
-int pmehdi(void)
+int main(void)
 {
 	int i = 1;
 
