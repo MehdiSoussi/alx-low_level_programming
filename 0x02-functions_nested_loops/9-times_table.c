@@ -14,13 +14,13 @@ void times_table(void)
 	char construct_line[36];
 	int c, c1, c2;
 	int i, j, k;
-	int c = i * j;
 
 	for (i = 0; i < 10; i++)
 	{
 		construct_line[0] = 48;
 		for (j = 1; j < 10; j++)
 		{
+			c = i * j;
 			construct_line[(j - 1) * 4 + 1] = 44;
 			c1 = c < 10 ? 32 : (c - (c % 10)) / 10 + 48;
 			c2 = c % 10 + 48;
