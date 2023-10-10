@@ -11,7 +11,7 @@ void print_times_table(int n)
 {
 
 int i, j;
-int c1, c2;
+int c0, c1, c2;
 int r = 10;
 int v = 44;
 int w = 32;
