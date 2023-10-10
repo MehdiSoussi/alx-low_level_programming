@@ -16,7 +16,7 @@ int main(void)
 		n = n1 + n2;
 		n1 = n2;
 		n2 = n;
-		i == 97 ? printf("%d", n) : printf("%d, ", n);
+		i == 97 ? printf("%ld", n) : printf("%ld, ", n);
 	}
 	return (0);
 }
