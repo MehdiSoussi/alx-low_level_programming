@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- ** print_to_98 - Entry point
+ ** print_times_table - Entry point
  **
  ** @n : Parametre 1
  ** Description: [P214T12]
@@ -22,20 +22,29 @@ if (!(n > 15 || n < 0))
 	{
 		for (j = 0 ; j <= n ; j++)
 		{
-			c1 =  (i * j) >= 10 ? ((i * j) / 10) % 10 : 0;
-			c2 =  (i * j) % 10;
+			c0 = (i * j) >= 100 ? (i * j) / 100 : 0;
+			c1 = (i * j) >= 10 ? ((i * j) / 10) % 10 : 0;
+			c2 = (i * j) % 10;
 			if (j != 0)
 			{
 				_putchar(w);
 				if ((i * j) < 10)
 				{
 					_putchar(w);
+					_putchar(w);
 					_putchar(c2 + 48);
 				}
-				else
+				if((i * j) >= 10 && (i * j) < 100)
 				{
+					_putchar(w);
 					_putchar(c1 + 48);
 					_putchar(c2 + 48);
+				}
+				if((i * j) >= 100)
+				{
+					_putchar(c0);
+					_putchar(c1);
+					_putchar(c2);
 				}
 			}
 			else
