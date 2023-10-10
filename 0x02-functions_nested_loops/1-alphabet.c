@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- ** main - Entry point
+ ** print_alphabet - Entry point
  **
  ** Description: [P214T1]
  **
@@ -16,4 +16,5 @@ void print_alphabet(void)
 		c++;
 	}
 	 _putchar(10);
+	return (0);
 }
