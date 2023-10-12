@@ -11,11 +11,11 @@
 
 void print_number(int n)
 {
-int pow_lev = 0;
+int pow_lev = 0 * n;
 int number;
 int i;
 int diminishing = n;
-int is_negative = 0;
+int is_negative = 0 * n;
 
 if (n < 0)
 {
