@@ -45,6 +45,6 @@ int is_prime(float n)
 	{
 		i > max ? max = i : 0;
 	}
-	printf("%.0f", max);
+	printf("%.0f\n", max);
 	return (1);
 }
