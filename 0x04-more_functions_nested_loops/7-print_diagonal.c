@@ -22,5 +22,8 @@ if (n > 0)
 	_putchar(10);
 	}
 }
+else
+{
 _putchar(10);
+}
 }
