@@ -29,13 +29,13 @@ do {
 diminishing = n;
 if (is_negative)
 {
-	putchar(45);
+	_putchar(45);
 }
 for (i = pow_lev - 1; i >= 0; i--)
 {
 	number = diminishing / power(10, i);
 	diminishing = diminishing - number * power(10, i);
-	putchar(number + 48);
+	_putchar(number + 48);
 }
 }
 
