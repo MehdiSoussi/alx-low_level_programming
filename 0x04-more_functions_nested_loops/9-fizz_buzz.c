@@ -22,12 +22,13 @@ for (i = 1 ; i <= 100 ; i++)
 	}
 	else if (i % 5 == 0)
 	{
-		printf("Buzz ");
+		i != 100 ? printf("Buzz ") : printf("Buzz");
 	}
 	else
 	{
 		printf("%d ", i);
 	}
 }
+printf("\n");
 return (0);
 }
