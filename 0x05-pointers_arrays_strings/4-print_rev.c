@@ -22,4 +22,5 @@ void print_rev(char *s)
 	{
 		_putchar(t[i]);
 	}
+	_putchar(10);
 }
