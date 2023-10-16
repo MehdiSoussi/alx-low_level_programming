@@ -3,7 +3,7 @@
  * swap_int - entrypoint
  * @a: Parametre 1
  * @b: Parametre 1
- * 
+ *
  * Description: [T1]
  *
  * Return: Return value
