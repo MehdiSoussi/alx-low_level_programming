@@ -12,7 +12,7 @@ int _atoi(char *s)
 	int found = 0;
 	char *number_head = find_number_head(s, &found);
 	int sign = positive_negative_none(number_head);
-	long number = 0;
+	int number = 0;
 
 	while (*number_head != '\0' && ((*number_head >= 48 && *number_head <= 57)))
 	{
