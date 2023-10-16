@@ -52,16 +52,17 @@ char *find_number_head(char *x, int *found)
  *
  * Return: Return value
  */
-int positive_negative_none(char *x , char *start)
+int positive_negative_none(char *x, char *start)
 {
 	int count = 0;
+
 	if (x == start)
 	{
 		return (1);
 	}
 	while (x != start)
 	{
-		if(*(x - 1) == 45)
+		if (*(x - 1) == 45)
 		{
 			count++;
 		}
