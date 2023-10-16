@@ -11,7 +11,7 @@ int _atoi(char *s)
 {
 	int found = 0;
 	char *number_head = find_number_head(s, &found);
-	int sign = positive_negative_none(number_head);
+	int sign = positive_negative_none(number_head, s);
 	int number = 0;
 
 	while (*number_head != '\0' && ((*number_head >= 48 && *number_head <= 57)))
@@ -52,14 +52,20 @@ char *find_number_head(char *x, int *found)
  *
  * Return: Return value
  */
-int positive_negative_none(char *x)
+int positive_negative_none(char *x , char *start)
 {
-	if (*(x - 1) == 45)
-	{
-		return (-1);
-	}
-	else
+	int count = 0;
+	if (x == start)
 	{
 		return (1);
 	}
+	while (x != start)
+	{
+		if(*(x - 1) == 45)
+		{
+			count++;
+		}
+		x--;
+	}
+	return ((count % 2) == 0 ? 1 : -1);
 }

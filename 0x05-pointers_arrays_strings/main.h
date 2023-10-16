@@ -11,4 +11,4 @@ void print_array(int *a, int n);
 char *_strcpy(char *dest, char *src);
 int _atoi(char *s);
 char* find_number_head(char *x, int *found);
-int positive_negative_none(char *x);
+int positive_negative_none(char *x , char *start);
