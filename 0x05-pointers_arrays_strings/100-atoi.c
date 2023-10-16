@@ -47,6 +47,7 @@ char *find_number_head(char *x, int *found)
 /**
  * positive_negative_none - entrypoint
  * @x: Parametre 1
+ * @start: Parametre 2
  *
  * Description: [T10]
  *
