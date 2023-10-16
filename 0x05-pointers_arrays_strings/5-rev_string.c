@@ -11,8 +11,8 @@ void rev_string(char *s)
 {
 	int i;
 	char *t = s;
-	int temp[100];
-	int flipped[100];
+	int temp[1000];
+	int flipped[1000];
 	int size = 0;
 
 	while (*t != '\0')
