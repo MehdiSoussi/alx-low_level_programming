@@ -15,3 +15,6 @@ char *rot13(char *);
 void pot_rot13(char *x);
 void print_number(int n);
 int power(int ten, int to_the_power);
+char *infinite_add(char *n1, char *n2, char *r, int size_r);
+int _atoi(char *s);
+void buffer_number(int n , char *r);
