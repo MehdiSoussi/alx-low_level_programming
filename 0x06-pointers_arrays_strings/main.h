@@ -11,3 +11,5 @@ int check_car(char c);
 void capitalize_next_lowercase(char *x);
 char *leet(char *);
 void pot_leet(char *x);
+char *rot13(char *);
+void pot_rot13(char *x);
