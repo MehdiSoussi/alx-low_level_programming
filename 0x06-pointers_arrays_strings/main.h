@@ -13,3 +13,5 @@ char *leet(char *);
 void pot_leet(char *x);
 char *rot13(char *);
 void pot_rot13(char *x);
+void print_number(int n);
+int power(int ten, int to_the_power);
