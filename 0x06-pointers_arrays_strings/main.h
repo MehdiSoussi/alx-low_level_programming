@@ -9,3 +9,5 @@ char *string_toupper(char *);
 char *cap_string(char *);
 int check_car(char c);
 void capitalize_next_lowercase(char *x);
+char *leet(char *);
+void pot_leet(char *x);
