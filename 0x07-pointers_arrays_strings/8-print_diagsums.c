@@ -17,11 +17,11 @@ void print_diagsums(int *a, int size)
 
 	if (size == 1)
 	{
-		printf("%d , %d\n", a[0], a[0]);
+		printf("%d, %d\n", a[0], a[0]);
 	}
 	else if (size == 2)
 	{
-		printf("%d , %d\n", a[0] + a[3], a[1] + a[2]);
+		printf("%d, %d\n", a[0] + a[3], a[1] + a[2]);
 	}
 	else
 	{
@@ -36,7 +36,7 @@ void print_diagsums(int *a, int size)
 			sum_right_to_left += a[i];
 		}
 	}
-	printf("%d , %d\n", sum_left_to_right,
+	printf("%d, %d\n", sum_left_to_right,
 			sum_right_to_left - a[0] - a[size * size - 1]);
 	}
 }
