@@ -1,4 +1,5 @@
 #include "main.h"
+#include <string.h>
 /**
  * wildcmp - entrypoint
  * @s1: Parametre 1
@@ -12,8 +13,8 @@ int wildcmp(char *s1, char *s2)
 {
 int size1, size2;
 
-size1 = _strlen(s1);
-size2 = _strlen(s2);
+size1 = strlen(s1);
+size2 = strlen(s2);
 
 if(size1 != size2)
 {
@@ -49,23 +50,4 @@ else
 {
 return (check_strings(s1, s2, size1 - 1, size2 - 1));
 }
-}
-/**
- * _strlen - entrypoint
- * @s: Parametre 1
- *
- * Description: [T8]
- *
- * Return: Return value
- */
-int _strlen(char *s)
-{
-int size = 0;
-
-while (*s != '\0')
-{
-size++;
-s++;
-}
-return (size);
 }

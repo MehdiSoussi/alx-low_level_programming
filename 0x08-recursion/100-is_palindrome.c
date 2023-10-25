@@ -1,4 +1,5 @@
 #include "main.h"
+#include <string.h>
 /**
  * is_palindrome - entrypoint
  * @s: Parametre 1
@@ -11,7 +12,7 @@ int is_palindrome(char *s)
 {
 int size;
 
-size = _strlen(s);
+size = strlen(s);
 if (*s == 0 || size == 1)
 {
 return (1);
@@ -74,23 +75,4 @@ else
 {
 return (check_palindrome_even(s, start+1, finish -1));
 }
-}
-/**
- * _strlen - entrypoint
- * @s: Parametre 1
- *
- * Description: [T7]
- *
- * Return: Return value
- */
-int _strlen(char *s)
-{
-int size = 0;
-
-while (*s != '\0')
-{
-size++;
-s++;
-}
-return (size);
 }

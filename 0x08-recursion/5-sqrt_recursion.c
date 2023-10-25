@@ -15,7 +15,7 @@ return (0);
 }
 else
 {
-return ((n > 0) ?  check(n, 1) : -1 * check(-n, 1));
+return ((n > 0) ?  check_recursion(n, 1) : -1 * check_recursion(-n, 1));
 }
 }
 /**
