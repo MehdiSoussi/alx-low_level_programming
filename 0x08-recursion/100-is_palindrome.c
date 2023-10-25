@@ -73,6 +73,6 @@ return (1);
 }
 else
 {
-return (check_palindrome_even(s, start+1, finish -1));
+return (check_palindrome_even(s, start + 1, finish - 1));
 }
 }

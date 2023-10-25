@@ -39,6 +39,6 @@ return (a);
 }
 else
 {
-return (check(x, a + 1));
+return (check_recursion(x, a + 1));
 }
 }
