@@ -9,13 +9,13 @@
  */
 int _sqrt_recursion(int n)
 {
-if (n == 0 )
+if (n == 0)
 {
 return (0);
 }
 else
 {
-return ((n > 0) ?  check_recursion(n, 1) : -1 * check_recursion(-n, 1));
+return ((n > 0) ?  check_recursion(n, 1) : -1);
 }
 }
 /**
