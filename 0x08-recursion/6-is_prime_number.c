@@ -2,7 +2,7 @@
 /**
  * is_prime_number - entrypoint
  * @n: Parametre 1
- * 
+ *
  * Description: [T6]
  *
  * Return: Return value
@@ -13,7 +13,7 @@ if (n == 1 || n == 0 || n == -1)
 {
 return (0);
 }
-else if ( n < 0 )
+else if (n < 0)
 {
 return (0);
 }
@@ -26,7 +26,7 @@ return (check_prime(n, 2));
  * check_prime - entrypoint
  * @x: Parametre 1
  * @a: Parametre 2
- * 
+ *
  * Description: [T6]
  *
  * Return: Return value
