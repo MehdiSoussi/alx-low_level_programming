@@ -18,3 +18,5 @@ char *_strchr(char *s, char c);
 unsigned int _strspn(char *s, char *accept);
 char *_strpbrk(char *s, char *accept);
 char *_strstr(char *haystack, char *needle);
+char *find_number_head(char *x, int *found);
+int positive_negative_none(char *x, char *start);
