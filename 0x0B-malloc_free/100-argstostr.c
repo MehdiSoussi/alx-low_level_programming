@@ -15,16 +15,16 @@ char *argstostr(int ac, char **av)
 char *p = malloc(sizeof(av));
 int i;
 
-if(p == 0)
-    return (0);
-if(ac == 0 || av == 0)
+if (p == 0)
+return (0);
+if (ac == 0 || av == 0)
 return (0);
 p = str_concat(0, av[0]);
 p = str_concat(p, "\n");
-for(i = 1 ; i <= ac; i++)
+for (i = 1 ; i <= ac; i++)
 {
 p = str_concat(p, av[i]);
-if(i != ac)
+if (i != ac)
 p = str_concat(p, "\n");
 }
 return (p);
