@@ -42,9 +42,13 @@ while(*(str + i) != '\0')
     }
     else
     {
-       *(p + count) = '\0'; 
-       *(q + array_count)= p;
+       *(p + count) = '\0';
+       if(*p != 32)
+       {
+       *(q + array_count) = p;
        array_count++;
+       }
+       
        denotes_start = 1;
     }
 i++;
