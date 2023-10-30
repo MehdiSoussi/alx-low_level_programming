@@ -24,6 +24,7 @@ p = str_concat(p, "\n");
 for(i = 1 ; i <= ac; i++)
 {
 p = str_concat(p, av[i]);
+if(i != ac)
 p = str_concat(p, "\n");
 }
 return (p);
