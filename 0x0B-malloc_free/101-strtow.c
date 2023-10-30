@@ -16,12 +16,15 @@ int i=0 , count, array_count = 0;
 int denotes_start = 1;
 char *p;
 char **q;
+int size;
+
+size = _strlen(str);
 
 q = malloc(100 * 100 * sizeof(char));
 if(q == 0)
     return 0;
 
-if(str == 0)
+if(str == 0 || size == 1 || size == 0)
     return 0;
 while(*(str + i) != '\0')
 {
@@ -51,4 +54,23 @@ i++;
        *(p + count) = '\0'; 
        *(q + array_count)= p;
 return q;
+}
+/**
+ *  * _strlen - entrypoint
+ *   * @s: Parametre 1
+ *    *
+ *     * Description: [T2]
+ *      *
+ *       * Return: Return value
+ **/
+int _strlen(char *s)
+{
+int size = 0;
+
+while (*s != '\0')
+{
+size++;
+s++;
+}
+return (size);
 }
