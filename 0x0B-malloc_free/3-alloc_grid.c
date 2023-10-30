@@ -17,7 +17,7 @@ int i, j;
 
 if (width <= 0 || height <= 0)
 return (0);
-p = malloc(height * sizeof (int *));
+p = malloc(height * sizeof(int *));
 if (p == 0)
 return (0);
 for (i = 0; i < height; i++)
@@ -26,7 +26,7 @@ for (i = 0; i < height; i++)
 if (*(p + i) == 0)
 {
 free(p);
-for(j = 0; j <= i ; j++)
+for (j = 0; j <= i ; j++)
 {
 free(*(p + j));
 }
