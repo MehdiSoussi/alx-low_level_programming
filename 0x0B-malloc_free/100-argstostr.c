@@ -12,7 +12,7 @@
  */
 char *argstostr(int ac, char **av)
 {
-char *p = malloc(sizeof(av));
+char *p = malloc(1);
 int i;
 
 if (p == 0)
