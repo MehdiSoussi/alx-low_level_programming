@@ -35,11 +35,6 @@ while(*(str + i) != '\0')
         denotes_start = 0;
     }
 
-    if((*(str + i) == 32 && *(str + i + 1) == 32) )
-    {
-    continue;
-    }
-
     if(!(*(str + i) == 32 && *(str + i + 1) != 32) )
     {
         *(p + count) = *(str + i);
@@ -54,8 +49,8 @@ while(*(str + i) != '\0')
     }
 i++;
 }
-       *(p + count) = '\0'; 
-       *(q + array_count)= p;
+    *(p + count) = '\0';
+    *(q + array_count) = p;
 return q;
 }
 /**
