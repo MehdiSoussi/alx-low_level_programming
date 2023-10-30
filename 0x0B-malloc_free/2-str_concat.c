@@ -18,7 +18,7 @@ int pointer_size;
 if (s1 == 0 || s2 == 0)
 return (0);
 pointer_size = (_strlen(s1) + _strlen(s2) + 1);
-p = (char *) malloc( pointer_size * sizeof(char));
+p = (char *)malloc(pointer_size * sizeof(char));
 if (p == 0)
 return (0);
 p = _strcat(1, p, s1);
@@ -30,13 +30,13 @@ return (p);
  * @type_pointer: Parametre 1
  * @dest: Parametre 2
  * @src: Parametre 3
- * 
+ *
  *     *
  *      * Description: [T2]
  *       *
  *        * Return: Return value
  **/
-char *_strcat(int type_pointer , char *dest, char *src)
+char *_strcat(int type_pointer, char *dest, char *src)
 {
 int dest_size = type_pointer == 1 ? 0 : _strlen(dest);
 int i = 0;
