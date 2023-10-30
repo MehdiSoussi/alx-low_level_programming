@@ -24,7 +24,7 @@ q = malloc(100 * 100 * sizeof(char));
 if(q == 0)
     return 0;
 
-if(str == 0 || size == 0 || *str = '\0')
+if(str == 0 || size == 0 || *str == '\0')
     return 0;
 while(*(str + i) != '\0')
 {
