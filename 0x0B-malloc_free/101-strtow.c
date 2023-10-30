@@ -16,9 +16,7 @@ int i=0 , count, array_count = 0;
 int denotes_start = 1;
 char *p;
 char **q;
-int size;
 
-size = _strlen(str);
 
 q = malloc(100 * 100 * sizeof(char));
 if(q == 0)
