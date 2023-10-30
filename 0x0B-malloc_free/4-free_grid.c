@@ -9,7 +9,7 @@
  *      * Description: [T4]
  *       *
  *        * Return: On success 1.
- *         */
+ **/
 void free_grid(int **grid, int height)
 {
 int i;
