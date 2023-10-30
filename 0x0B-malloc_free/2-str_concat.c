@@ -15,10 +15,12 @@ char *str_concat(char *s1, char *s2)
 char *p;
 int pointer_size;
 
-if (s1 == 0 || s2 == 0)
-return (0);
+if (s1 == 0)
+s1 = "";
+if (s2 == 0)
+s2 = "";
 pointer_size = (_strlen(s1) + _strlen(s2) + 1);
-p = (char *)malloc(pointer_size * sizeof(char));
+p = (char*) malloc(pointer_size * sizeof(char));
 if (p == 0)
 return (0);
 p = _strcat(1, p, s1);
