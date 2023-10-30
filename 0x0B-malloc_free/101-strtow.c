@@ -24,7 +24,7 @@ q = malloc(100 * 100 * sizeof(char));
 if(q == 0)
     return 0;
 
-if(str == 0 || size == 2 || *str == '\0' )
+if(str == 0 || *str == '\0' )
     return 0;
 while(*(str + i) != '\0')
 {
@@ -35,6 +35,11 @@ while(*(str + i) != '\0')
             return 0;
         count = 0;
         denotes_start = 0;
+    }
+
+    if((*(str + i) == 32 && *(str + i + 1) == 32) )
+    {
+    continue;
     }
 
     if(!(*(str + i) == 32 && *(str + i + 1) != 32) )
