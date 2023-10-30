@@ -20,7 +20,7 @@ s1 = "";
 if (s2 == 0)
 s2 = "";
 pointer_size = (_strlen(s1) + _strlen(s2) + 1);
-p = (char*) malloc(pointer_size * sizeof(char));
+p = (char) *malloc(pointer_size * sizeof(char));
 if (p == 0)
 return (0);
 p = _strcat(1, p, s1);
