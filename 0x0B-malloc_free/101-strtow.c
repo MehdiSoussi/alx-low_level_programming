@@ -48,6 +48,7 @@ while(*(str + i) != '\0')
     }
 i++;
 }
-
+       *(p + count) = '\0'; 
+       *(q + array_count)= p;
 return q;
 }
