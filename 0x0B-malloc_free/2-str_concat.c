@@ -33,10 +33,9 @@ return (p);
  * @dest: Parametre 2
  * @src: Parametre 3
  *
- *     *
- *      * Description: [T2]
- *       *
- *        * Return: Return value
+ * Description: [T2]A
+ *
+ * Return: On success 1.
  **/
 char *_strcat(int type_pointer, char *dest, char *src)
 {
