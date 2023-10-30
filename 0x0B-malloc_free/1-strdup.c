@@ -14,7 +14,7 @@ char *p;
 
 if (str == (char *) 0)
 return ((char *) 0);
-p = (char *) malloc(_strlen(str) * sizeof(char));
+p = (char *) malloc(_strlen(str) * sizeof(char) + 1);
 if (p == (char *) 0)
 return ((char *) 0);
 _strcpy(p, str);
