@@ -11,28 +11,12 @@
  */
 char **strtow(char *str)
 {
-int i = 0 , count, array_count = 0, checkempty= 1;
-int denotes_start = 1;
-char *p;
-char **q;
+int i = 0, count, array_count = 0, checkempty= 1, denotes_start = 1;
+char *p, **q;
 
+checkempty_function(str, &checkempty);
 q = malloc(10 * 10 * sizeof(char));
-if (q == 0)
-return (0);
-
-
-while(*(str + i) != '\0')
-{
-if(*(str + i) == 32)
-{
-i++;
-continue;
-}
-checkempty= 0;
-i++;
-}
-i=0;
-if (str == 0 || *str == '\0' || checkempty == 1)
+if (q == 0 || str == 0 || *str == '\0' || checkempty == 1)
 return (0);
 while (*(str + i) != '\0')
 {
@@ -46,10 +30,7 @@ denotes_start = 0;
 }
 if (!(*(str + i) == 32 && *(str + i + 1) != 32) )
 {
-if(*(str + i) != 32)
-*(p + count) = *(str + i);
-else
-*(p + count) = '\0';
+*(p + count) = (*(str + i) != 32) ? *(str + i) : '\0';
 count++;
 }
 else
@@ -66,14 +47,34 @@ i++;
 }
 if(*(q + array_count - 1) != p)
 {
-printf("%p\n", *(q + array_count - 1));
-printf("%p\n", (p));
 *(p + count) = '\0';
 *(q + array_count) = p;
 }
 while(**q == '\0')
-{
 q++;
-}
 return (q);
+}
+/**
+ * checkempty_function - writes the character c to stdout
+ * @str: Parametre 1
+ * @checkempty : Parametre 2
+ *
+ * Description: [T6]
+ *
+ * Return: On success 1.
+ */
+checkempty_function(char *str, int *checkempty)
+{
+int i = 0;
+
+while(*(str + i) != '\0')
+{
+if(*(str + i) == 32)
+{
+i++;
+continue;
+}
+*checkempty = 0;
+i++;
+}
 }
