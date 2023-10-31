@@ -25,7 +25,7 @@ while(*(str + i) != '\0')
 {
 if(*(str + i) != 32 )
 {
-checkempty= 1
+checkempty= 1;
 break;
 }
 i++
