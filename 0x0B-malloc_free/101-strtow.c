@@ -86,7 +86,7 @@ i++;
  *
  * Return: On success 1.
  */
-void denotes_start_function(char **p, int *denotes_start, int* count)
+void denotes_start_function(char **p, int *denotes_start, int *count)
 {
 *p = malloc(10);
 *count = 0;
