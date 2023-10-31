@@ -63,7 +63,7 @@ return (q);
  *
  * Return: On success 1.
  */
-checkempty_function(char *str, int *checkempty)
+void checkempty_function(char *str, int *checkempty)
 {
 int i = 0;
 
