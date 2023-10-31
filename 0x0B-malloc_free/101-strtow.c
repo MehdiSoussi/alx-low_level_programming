@@ -11,14 +11,13 @@
  */
 char **strtow(char *str)
 {
-/* str = "Mehdi Soussi X"*/
 int i=0 , count, array_count = 0;
 int denotes_start = 1;
 char *p;
 char **q;
 
 
-q = malloc(100 * 100 * sizeof(char));
+q = malloc(10 * 10 * sizeof(char));
 if(q == 0)
     return 0;
 
@@ -28,7 +27,7 @@ while(*(str + i) != '\0')
 {
     if(denotes_start)
     {
-        p = malloc(100);
+        p = malloc(10);
         if(p == 0)
             return 0;
         count = 0;
@@ -37,8 +36,12 @@ while(*(str + i) != '\0')
 
     if(!(*(str + i) == 32 && *(str + i + 1) != 32) )
     {
+        if(*(str + i) != 32)
         *(p + count) = *(str + i);
+        else
+         *(p + count) = '\0';
         count ++;
+       
     }
     else
     {
@@ -53,8 +56,19 @@ while(*(str + i) != '\0')
     }
 i++;
 }
+ if(*(q + array_count - 1) != p)
+{
+  printf("%p\n", *(q + array_count - 1));
+  printf("%p\n", (p));
     *(p + count) = '\0';
     *(q + array_count) = p;
+}
+
+
+while(**q == '\0')
+{
+  q++;
+}
 return q;
 }
 /**
