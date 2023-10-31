@@ -23,11 +23,9 @@ return (0);
 
 while(*(str + i) != '\0')
 {
-if(*(str + i) != 32 )
-{
-checkempty= 1;
-break;
-}
+if(*(str + i) == 32)
+continue;
+checkempty= 0;
 i++;
 }
 i=0;
