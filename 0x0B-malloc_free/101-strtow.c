@@ -24,7 +24,10 @@ return (0);
 while(*(str + i) != '\0')
 {
 if(*(str + i) == 32)
+{
+i++;
 continue;
+}
 checkempty= 0;
 i++;
 }
