@@ -28,7 +28,7 @@ if(*(str + i) != 32 )
 checkempty= 1;
 break;
 }
-i++
+i++;
 }
 i=0;
 if (str == 0 || *str == '\0' || checkempty == 1)
