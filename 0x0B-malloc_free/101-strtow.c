@@ -22,7 +22,7 @@ while (*(str + i) != '\0')
 {
 if (denotes_start)
 {
-denotes_start(&p, &denotes_start, &count);
+denotes_start_function(&p, &denotes_start, &count);
 if (p == 0)
 return (0);
 }
@@ -77,7 +77,7 @@ i++;
 }
 }
 /**
- * denotes_start - writes the character c to stdout
+ * denotes_start_function - writes the character c to stdout
  * @p: Parametre 1
  * @denotes_start : Parametre 2
  * @count : Parametre 3
@@ -86,7 +86,7 @@ i++;
  *
  * Return: On success 1.
  */
-void denotes_start(char **p, int *denotes_start, int* count)
+void denotes_start_function(char **p, int *denotes_start, int* count)
 {
 *p = malloc(10);
 *count = 0;

@@ -15,3 +15,4 @@ char *argstostr(int ac, char **av);
 
 char **strtow(char *str);
 void checkempty_function(char *str, int *checkempty);
+void denotes_start_function(char **p, int *denotes_start, int* count);
