@@ -15,7 +15,7 @@ unsigned int i;
 unsigned int dim = nmemb * size;
 char *a = malloc(dim);
 
-if (a == 0 || nmemb == 0 || size ==0)
+if (a == 0 || nmemb == 0 || size == 0)
 return (0);
 for (i = 0 ; i < dim ; i++)
 {

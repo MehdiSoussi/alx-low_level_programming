@@ -22,10 +22,10 @@ char *p = malloc(size_to_allocate);
 if (p == 0)
 return (0);
 
-p = _strncat( 1 ,p , s1, leng_s1, leng_s1);
-p = _strncat( 0 ,p , s2, leng_s2, leng_s1);
+p = _strncat(1, p, s1, leng_s1, leng_s1);
+p = _strncat(0, p, s2, leng_s2, leng_s1);
 
-*(p + size_to_allocate-1) = '\0';
+*(p + size_to_allocate - 1) = '\0';
 
 return (p);
 }
@@ -41,7 +41,8 @@ return (p);
  *       *
  *        * Return: Return value
  **/
-char *_strncat(unsigned int empty, char *dest, char *src, unsigned int n , unsigned int s1_length)
+char *_strncat(unsigned int empty, 
+char *dest, char *src, unsigned int n, unsigned int s1_length)
 {
 unsigned int dest_size = (empty == 1) ? 0 : s1_length;
 unsigned int i = 0;

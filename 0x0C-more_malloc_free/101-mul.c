@@ -9,23 +9,23 @@
  *
  * Return: On success 1.
  */
-int main(int argc, char**argv)
+int main(int argc, char **argv)
 {
 int n1, n2;
 
-if(argc != 3)
+if (argc != 3)
 {
 _puts("Error");
 return (98);
 }
 n1 = atoi(argv[1]);
 n2 = atoi(argv[2]);
-if(n1 == 0 || n2 == 0)
+if (n1 == 0 || n2 == 0)
 {
 _puts("Error");
 return (98);
 }
-print_number(n1 * n2);
+print_number(n1 *n2);
 return (0);
 }
 /**
@@ -79,7 +79,7 @@ _putchar(45);
 for (i = pow_lev - 1; i >= 0; i--)
 {
 number = diminishing / power(10, i);
-diminishing = diminishing - number * power(10, i);
+diminishing = diminishing - number *power(10, i);
 _putchar(number + 48);
 }
 _putchar(10);

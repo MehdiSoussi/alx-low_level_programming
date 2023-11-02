@@ -17,7 +17,7 @@ int *a = malloc(array_size * sizeof(int));
 
 if (min > max || a == 0)
 return (0);
-for (i=0 ; i< array_size; i++)
+for (i = 0 ; i < array_size; i++)
 {
 a[i] = min;
 min++;
