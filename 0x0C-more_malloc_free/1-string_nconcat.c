@@ -41,7 +41,7 @@ return (p);
  *       *
  *        * Return: Return value
  **/
-char *_strncat(unsigned int empty, 
+char *_strncat(unsigned int empty,
 char *dest, char *src, unsigned int n, unsigned int s1_length)
 {
 unsigned int dest_size = (empty == 1) ? 0 : s1_length;
