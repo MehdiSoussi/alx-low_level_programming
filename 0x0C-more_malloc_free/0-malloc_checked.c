@@ -14,7 +14,7 @@ void *a = malloc(b);
 
 if (a == 0)
 {
-return (0);
+return (98);
 }
 return (a);
 }
