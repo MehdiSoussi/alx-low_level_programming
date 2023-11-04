@@ -1,7 +1,7 @@
 #include "main.h"
+#include <stdio.h>
 /**
- * malloc_checked - writes the character c to stdout
- * @b: Parametre 1
+ * main - writes the character c to stdout
  *
  * Description: [T0]
  *
@@ -9,23 +9,6 @@
  */
 int main(void)
 {
-_puts(__FILE__);
-return 0;
-}
-/**
- * _puts - entrypoint
- * @str: Parametre 1
- *
- * Description: [T3]
- *
- * Return: Return value
- */
-void _puts(char *str)
-{
-while (*str != '\0')
-{
-	_putchar(*str);
-	str++;
-}
-	_putchar(10);
+printf("%s", __FILE__);
+return (0);
 }
