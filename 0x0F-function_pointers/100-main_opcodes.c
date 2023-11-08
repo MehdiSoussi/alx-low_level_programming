@@ -16,13 +16,13 @@ unsigned char *q = (unsigned char *)p;
 int i;
 int k;
 
-if(argc != 2)
+if (argc != 2)
 {
 printf("Error\n");
 return (1);
 }
 k = atoi(argv[1]);
-if(k < 0)
+if (k < 0)
 {
 printf("Error\n");
 return (2);
