@@ -22,11 +22,11 @@ va_start(args, n);
 for (i = 0; i < n; i++)
 {
 p = va_arg(args, char*);
-if(p == 0)
+if (p == 0)
 printf("(nil)");
 else
 printf("%s", p);
-if(separator != 0 && i != n - 1)
+if (separator != 0 && i != n - 1)
 printf("%s", separator);
 }
 va_end(args);
