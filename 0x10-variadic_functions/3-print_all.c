@@ -39,17 +39,20 @@ break;
 case 's':
 x = va_arg(args, char*);
 c = 1;
-if(x == 0)
+if (x == 0)
 printf("(nil)");
-else
+while (x != 0)
+{
 printf("%s", x);
+break;
+}
 break;
 default:
 c = 0;
 break;
 }
 p++;
-if(*(p) != '\0' && c == 1)
+if (*(p) != '\0' && c == 1)
 printf(", ");
 i++;
 c = 0;
