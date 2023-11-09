@@ -62,7 +62,7 @@ printf("\n");
  *       *
  *        * Return: On success 1.
  **/
-void mehdi(int x)
+void mehdi(char *x)
 {
 if (x == 0)
 printf("(nil)");
