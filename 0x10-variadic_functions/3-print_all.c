@@ -39,13 +39,7 @@ break;
 case 's':
 x = va_arg(args, char*);
 c = 1;
-if (x == 0)
-printf("(nil)");
-while (x != 0)
-{
-printf("%s", x);
-break;
-}
+mehdi(x);
 break;
 default:
 c = 0;
@@ -59,4 +53,22 @@ c = 0;
 }
 va_end(args);
 printf("\n");
+}
+/**
+ *  * mehdi - writes the character c to stdout
+ *   * @x: Parametre 1
+ *     *
+ *      * Description: [T0]
+ *       *
+ *        * Return: On success 1.
+ **/
+void mehdi(int x)
+{
+if (x == 0)
+printf("(nil)");
+while (x != 0)
+{
+printf("%s", x);
+break;
+}
 }
