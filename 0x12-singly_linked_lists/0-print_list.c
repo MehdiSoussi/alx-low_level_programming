@@ -11,7 +11,7 @@
 size_t print_list(const list_t *h)
 {
 list_t *counting = h;
-int count = 0;
+size_t count = 0;
 
 while (counting->next != 0)
 {
