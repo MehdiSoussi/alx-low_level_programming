@@ -12,12 +12,13 @@
  **/
 void free_list(list_t *head)
 {
-list_t *savetofree;
+list_t *savetofree, *firstnode;
 
-while(head != 0)
+while (head->next != 0)
 {
 savetofree = head;
-head = head-> next;
+head = head->next;
 free(savetofree);
 }
+free(firstnode);
 }
