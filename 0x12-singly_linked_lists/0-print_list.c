@@ -17,13 +17,14 @@ while (h->next != 0)
 count++;
 if (h->str == 0)
 {
-printf("[0] (nil)");
+printf("[0] (nil)\n");
 }
 else
 {
-printf("[%d] %s", h->len, h->str);
+printf("[%d] %s\n", h->len, h->str);
 }
 h = h->next;
 }
+printf("-> %d elements\n", count);
 return (count);
 }
