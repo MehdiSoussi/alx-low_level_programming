@@ -10,10 +10,11 @@
  */
 int main(void)
 {
-    list_t *head;
+    list_t *head, *save;
 
     head = NULL;
     add_node_end(&head, "Anne");
+    save = head;
     add_node_end(&head, "Colton");
     add_node_end(&head, "Corbin");
     add_node_end(&head, "Daniel");
@@ -41,6 +42,6 @@ int main(void)
     add_node_end(&head, "Timothy");
     add_node_end(&head, "Victor");
     add_node_end(&head, "Walton");
-    print_list(head);
+    print_list(save);
     return (0);
 }

@@ -23,6 +23,11 @@ p->str = x;
 p->len = _strlen(x);
 p->next = 0;
 
+if(*head == 0)
+{
+   *head = p;
+}
+else{
 op = *head;
 while (op->next != 0)
 {
@@ -30,7 +35,7 @@ op = op->next;
 }
 
 op->next = p;
-
+}
 return (p);
 }
 /**
