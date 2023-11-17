@@ -1,5 +1,5 @@
-#include "lists.h"
 #include <stdio.h>
+#include "lists.h"
 /**
  *  * print_list - entrypoint
  *   * @h: Parametre 1
@@ -10,21 +10,20 @@
  **/
 size_t print_list(const list_t *h)
 {
-list_t *counting = h;
 size_t count = 0;
 
-while (counting->next != 0)
+while (h->next != 0)
 {
 count++;
-if (counting->str == 0)
+if (h->str == 0)
 {
 printf("[0] (nil)");
 }
 else
 {
-printf("[%d] %s", counting->len, counting->str);
+printf("[%d] %s", h->len, h->str);
 }
-counting = counting->next;
+h = h->next;
 }
 return (count);
 }
