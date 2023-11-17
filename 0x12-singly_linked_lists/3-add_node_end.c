@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <string.h>
 /**
- *  * add_node - entrypoint
+ *  * add_node_end - entrypoint
  *   * @head: Parametre 1
  *   * @str: Parametre 2
  *      *
@@ -11,21 +11,27 @@
  *        *
  *         * Return: Return value
  **/
-list_t *add_node(list_t **head, const char *str)
+list_t *add_node_end(list_t **head, const char *str)
 {
 char *x;
-list_t *p = malloc(sizeof(list_t *));
+list_t *op, *p = malloc(sizeof(list_t *));
 
 if (p == 0)
-return (*head);
-
+return (0);
 x = strdup(str);
 p->str = x;
 p->len = _strlen(x);
-p->next = *head;
+p->next = 0;
 
-*head = p;
-return (*head);
+op = *head;
+while (op->next != 0)
+{
+op = op->next;
+}
+
+op->next = p;
+
+return (p);
 }
 /**
  * _strlen - entrypoint
