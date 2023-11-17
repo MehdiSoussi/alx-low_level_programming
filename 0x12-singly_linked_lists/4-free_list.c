@@ -18,6 +18,7 @@ while (head != 0)
 {
 savetofree = head;
 head = head->next;
+free(savetofree->str);
 free(savetofree);
 }
 }
