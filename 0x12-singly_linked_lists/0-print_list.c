@@ -25,6 +25,5 @@ printf("[%d] %s\n", h->len, h->str);
 }
 h = h->next;
 }
-printf("-> %lu elements\n", count);
 return (count);
 }
