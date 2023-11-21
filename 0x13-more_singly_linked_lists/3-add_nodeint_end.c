@@ -15,13 +15,19 @@ listint_t *counting, *p = malloc(sizeof(listint_t));
 if (p == 0)
 return (0);
 
-counting = *head;
-while(counting->next != 0)
-counting = counting->next;
-
 p->n = n;
 p->next = 0;
-counting->next = p;
 
+counting = *head;
+if (counting == 0)
+{
+*head = p;
+}
+else
+{
+while (counting->next != 0)
+counting = counting->next;
+counting->next = p;
+}
 return (p);
 }
