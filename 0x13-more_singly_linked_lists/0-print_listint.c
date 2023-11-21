@@ -15,7 +15,7 @@ size_t size = 0;
 while (h != 0)
 {
 size++;
-printf("%d", h->n);
+printf("%d\n", h->n);
 h = h->next;
 }
 return (size);
