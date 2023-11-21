@@ -1,10 +1,11 @@
 #include "lists.h"
 
 /**
- * listint_len - Entry point
+ * add_nodeint - Entry point
  *
  * Description: Determine wether a random int is positive, negative or zero"
- * @h: Parameter 1
+ * @head: Parameter 1
+ * @n: Parameter 2
  * Return: Always 0 (Success)
  */
 listint_t *add_nodeint(listint_t **head, const int n);
