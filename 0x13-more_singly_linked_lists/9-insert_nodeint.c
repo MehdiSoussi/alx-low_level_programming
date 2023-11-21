@@ -6,7 +6,7 @@
  * Description: Determine wether a random int is positive, negative or zero"
  * @head: Parameter 1
  * @idx: Parameter 1
- * @n: Parameter 1 
+ * @n: Parameter 1
  * Return: Always 0 (Success)
  */
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
