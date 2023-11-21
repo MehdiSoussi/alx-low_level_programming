@@ -8,7 +8,7 @@
  * @n: Parameter 2
  * Return: Always 0 (Success)
  */
-listint_t *add_nodeint(listint_t **head, const int n);
+listint_t *add_nodeint(listint_t **head, const int n)
 {
 listint_t *p = malloc(sizeof(listint_t));
 
