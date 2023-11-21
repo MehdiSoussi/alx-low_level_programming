@@ -49,7 +49,7 @@ return (new);
  *
  * Description: Determine wether a random int is positive, negative or zero"
  * @head: Parameter 1
- * @n: Parameter 2
+ * @n: Parameter 20
  * Return: Always 0 (Success)
  */
 listint_t *add_nodeint(listint_t **head, const int n)
@@ -62,6 +62,5 @@ return (0);
 p->n = n;
 p->next = *head;
 *head = p;
-
 return (*head);
 }
