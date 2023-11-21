@@ -1,5 +1,6 @@
 #include "lists.h"
 #include <stdlib.h>
+#include <stdio.h>
 
 /**
  * main - Entry point
@@ -14,7 +15,8 @@ size_t size = 0;
 while (h != 0)
 {
 size++;
-h = h-> next;
+printf("%d", h->n);
+h = h->next;
 }
 return (size);
 }
